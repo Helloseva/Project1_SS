@@ -1,0 +1,41 @@
+.subscribe-section {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh 20px 15vh 20px;
+}
+
+.subscribe-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.subscribe-header h2 {
+  font-size: 30px;
+}
+
+.form-container form {
+  display: grid;
+  grid-template-columns: 300px 110px;
+  grid-gap: 0px 10px;
+}
+
+.form-container form input {
+  border: 2px solid;
+  border-radius: 10px;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.form-container form input::placeholder {
+  font-style: italic;
+}
+
+.form-container form button {
+  background-color: #f5cdbc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

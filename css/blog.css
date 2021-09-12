@@ -1,0 +1,137 @@
+@import url('header.css');
+@import url('subscribe.css');
+@import url('footer.css');
+@import url('media.css');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-container {
+    grid-area: main;
+    width: 100%;
+    height: auto;
+}
+
+.blog-info {
+    padding-left: 50px;
+    font-size: 0.9rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.author-info {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+
+}
+.bio {
+    padding-top: 7px;
+    padding-left: 10px;
+    opacity: 0.7;
+    color: #DEB887;
+}
+
+.author {
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 5px;
+    color: #FFB6C1;
+}
+
+.avatar img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.blog-img img {
+    max-width: 80%;
+    max-height: 30%;
+    object-fit: cover;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+
+.blog-para p {
+    max-width: 80%;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.side-post {
+    padding: 80px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    height: auto;
+}
+
+.post-image {
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.blog-link {
+text-decoration: none;
+font-size: 1.1rem;
+font-style: italic;
+font-weight: 600;
+background-color: #6495ED;
+}
+
+blockquote {
+    display: block;
+    padding-left: 40px;
+    max-width: 80%;
+    margin: 20px;
+}
+
+.social img {
+  width: 1.5rem;
+  margin-top: .7rem;
+  margin-right: .5rem;
+}
+
+/* responsive */
+@media screen and (min-width: 850px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-areas:
+        "sidebar main"
+        "sidebar main";
+    }
+    .side-post {
+        padding: 30px;
+    }
+    .blog-para p {
+        line-height: 2;
+    }
+    .blog-info {
+        padding-left: 100px;
+    }
+}
